@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#06080B" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>Jarvis</title>
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="bar">
+    <h1 id="name">Jarvis</h1>
+    <p class="readout"><span id="state">connecting</span><span class="dot" id="dot"></span></p>
+  </header>
+
+  <div class="thread-line"><span id="pulse"></span></div>
+
+  <main id="thread" class="thread" aria-live="polite">
+    <p class="empty" id="empty">The core is running on your machine. Ask it something.</p>
+  </main>
+
+  <form class="compose" id="compose">
+    <input
+      id="input"
+      type="text"
+      autocomplete="off"
+      autocapitalize="sentences"
+      placeholder="Type instead"
+      aria-label="Message to Jarvis"
+    />
+    <button type="submit" id="send">Send</button>
+  </form>
+
+  <div class="talk-row">
+    <button type="button" id="talk" aria-label="Hold to talk to Jarvis">
+      <span id="talk-label">Hold to talk</span>
+    </button>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
+<section
+    id="jarvis-3d"
+    class="jarvis-3d"
+>
+    <div
+        id="three-container"
+        class="three-container"
+    ></div>
+
+    <div class="three-overlay">
+        <div class="three-title">
+            JARVIS VISUALIZATION
+        </div>
+
+        <div
+            id="three-status"
+            class="three-status"
+        >
+            READY
+        </div>
+    </div>
+</section>

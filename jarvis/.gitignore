@@ -1,0 +1,57 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# AI / ML model files
+*.pt
+*.onnx
+*.tflite
+*.task
+*.engine
+*.bin
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+tmp/
+cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Generated media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.webp
+captures/
+recordings/
+screenshots/
+"@ | Set-Content .gitignore

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>JARVIS // HOLOGRAPHIC AR</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- ================================================= -->
+        <!-- CAMERA -->
+        <!-- ================================================= -->
+
+        <img
+            id="camera"
+            alt=""
+        >
+
+        <!-- ================================================= -->
+        <!-- THREE.JS -->
+        <!-- ================================================= -->
+
+        <canvas
+            id="three"
+        ></canvas>
+
+        <!-- ================================================= -->
+        <!-- HUD -->
+        <!-- ================================================= -->
+
+        <div id="hud">
+
+            <div id="brand">
+                JARVIS
+            </div>
+
+            <div id="status">
+                INITIALIZING
+            </div>
+
+            <div id="gesture">
+                GESTURE // UNKNOWN
+            </div>
+
+            <div id="mode">
+                SYSTEM READY
+            </div>
+
+        </div>
+
+        <!-- ================================================= -->
+        <!-- RETICLE -->
+        <!-- ================================================= -->
+
+        <div
+            id="reticle"
+            class="hidden"
+        >
+
+            <div class="reticle-ring"></div>
+
+            <div class="reticle-dot"></div>
+
+            <div class="reticle-h"></div>
+
+            <div class="reticle-v"></div>
+
+        </div>
+
+        <!-- ================================================= -->
+        <!-- CREATE MODE -->
+        <!-- ================================================= -->
+
+        <div
+            id="createMode"
+            class="hidden"
+        >
+
+            <div class="create-title">
+                CREATE MODE
+            </div>
+
+            <div class="create-subtitle">
+                PEACE + PINCH
+            </div>
+
+        </div>
+
+        <!-- ================================================= -->
+        <!-- KEYBOARD -->
+        <!-- ================================================= -->
+
+        <div id="keyboard">
+
+            <div class="keyboard-title">
+                JARVIS // HOLOGRAPHIC INPUT
+            </div>
+
+            <div
+                id="keyboard-text"
+                class="keyboard-text"
+            ></div>
+
+            <div
+                id="keys"
+                class="keys"
+            ></div>
+
+        </div>
+
+        <!-- ================================================= -->
+        <!-- LOADING -->
+        <!-- ================================================= -->
+
+        <div id="loading">
+
+            <div class="loading-core"></div>
+
+            <div>
+                INITIALIZING JARVIS
+            </div>
+
+            <div class="loading-small">
+                WEBGL HOLOGRAPHIC ENGINE
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- THREE.JS -->
+    <!-- ===================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js"
+    ></script>
+
+    <script
+        src="/static/app.js"
+    ></script>
+
+</body>
+
+</html>

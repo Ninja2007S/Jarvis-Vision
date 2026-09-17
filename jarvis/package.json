@@ -1,0 +1,16 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "A private assistant that runs entirely on your own machine and answers from your phone, anywhere, with no accounts, no API keys and no cost.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "three": "^0.186.0"
+  }
+}

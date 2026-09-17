@@ -1,0 +1,17 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+httpx==0.28.1
+
+# Phase 2: voice — Piper itself is a standalone binary, not a pip package
+# (see README) so only its speech-to-text counterpart is a dependency here.
+faster-whisper==1.1.0
+numpy>=1.26,<3
+
+# Hands: webcam gesture tracking (runs as a separate local process)
+# Uses the current Tasks API (HandLandmarker) — see hands/tracker.py.
+# Not pinned to an exact patch version: MediaPipe's old release train
+# doesn't publish wheels for newer Python versions, so this takes
+# whatever's newest and compatible instead of chasing a stale pin.
+mediapipe>=0.10.30
+opencv-python==4.10.0.84
+pyautogui==0.9.54
